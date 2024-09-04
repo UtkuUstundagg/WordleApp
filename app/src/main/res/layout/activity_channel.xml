@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.ChannelActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/welcometext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoş Geldiniz"
+        android:textSize="26sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <!-- Kullanıcı adı metni -->
+    <TextView
+        android:id="@+id/welcomeUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="26sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/welcometext"/>
+
+
+    <!-- İki butonu içerecek olan yatay düzen -->
+    <LinearLayout
+        android:id="@+id/gameButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <!-- İlk buton -->
+        <Button
+            android:id="@+id/assignedLetterGame"
+            android:layout_width="10dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Harf Sabitli Oyun"
+            android:textColor="#FFFFFF" />
+
+
+        <!-- İkinci buton -->
+        <Button
+            android:id="@+id/randomLetterGame"
+            android:layout_width="10dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Harf Sabitsiz Oyun"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- assignedLetterGame butonunun altına eklenecek olan butonlar -->
+    <LinearLayout
+        android:id="@+id/assignedLetterButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/gameButtons"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone">
+
+        <!-- İlk buton -->
+        <Button
+            android:id="@+id/assignedLetterButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Harf" />
+
+        <!-- İkinci buton -->
+        <Button
+            android:id="@+id/assignedLetterButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Harf" />
+
+        <!-- Üçüncü buton -->
+        <Button
+            android:id="@+id/assignedLetterButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 Harf" />
+
+        <!-- Dördüncü buton -->
+        <Button
+            android:id="@+id/assignedLetterButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 Harf" />
+    </LinearLayout>
+
+    <!-- randomLetterGame butonunun altına eklenecek olan butonlar -->
+    <LinearLayout
+        android:id="@+id/randomLetterButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/gameButtons"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="290dp"
+        android:visibility="gone">
+
+        <!-- İlk buton -->
+        <Button
+            android:id="@+id/randomLetterButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Harf" />
+
+        <!-- İkinci buton -->
+        <Button
+            android:id="@+id/randomLetterButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Harf" />
+
+        <!-- Üçüncü buton -->
+        <Button
+            android:id="@+id/randomLetterButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 Harf" />
+
+        <!-- Dördüncü buton -->
+        <Button
+            android:id="@+id/randomLetterButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 Harf" />
+    </LinearLayout>
+</RelativeLayout>

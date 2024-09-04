@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/registerActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="538dp"
+        android:layout_height="900dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <EditText
+        android:id="@+id/usernameText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Kullanıcı Adı"
+        android:textColorHint="#c9c9c9"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/usernameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Şifre"
+        android:textColorHint="#c9c9c9"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/confirmPasswordText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/passwordText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Şifre Tekrarı"
+        android:textColorHint="#c9c9c9"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Kayıt Ol"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/confirmPasswordText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>
